@@ -13,11 +13,12 @@
     <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
     <quarkus.platform.group-id>io.quarkus.platform</quarkus.platform.group-id>
     <quarkus.platform.version>2.13.0.Final</quarkus.platform.version>
-    <omnifaces-quarkus.version>3.0.1</omnifaces-quarkus.version>
-    <omnifaces.version>3.13.4</omnifaces.version>
+
     <primefaces.version>11.0.0</primefaces.version>
     <primefaces-extensions.version>11.0.0</primefaces-extensions.version>
     <myfaces.version>2.3-next-M7</myfaces.version>
+    <omnifaces-quarkus.version>3.0.2</omnifaces-quarkus.version>
+    <omnifaces.version>3.14.1</omnifaces.version>
     <skipITs>true</skipITs>
     <surefire-plugin.version>3.0.0-M7</surefire-plugin.version>
   </properties>
@@ -52,6 +53,11 @@
       <scope>compile</scope>
     </dependency>
     <!-- Myfaces -->
+    <dependency>
+      <groupId>io.quarkiverse.omnifaces</groupId>
+      <artifactId>quarkus-omnifaces</artifactId>
+      <version>${omnifaces-quarkus.version}</version>
+    </dependency>
     <dependency>
       <groupId>org.apache.myfaces.core.extensions.quarkus</groupId>
       <artifactId>myfaces-quarkus</artifactId>
